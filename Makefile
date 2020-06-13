@@ -81,6 +81,10 @@ lint:
 unix-test:
 	$(CASK) exec ert-runner -L . -L clients  -t '!no-win' -t '!org'
 
+testprereq:
+	sudo pip install python-language-server
+	go get -v golang.org/x/tools/gopls
+
 windows-test:
 	@$(EMACS) -Q --batch \
 		-l test/windows-bootstrap.el \
