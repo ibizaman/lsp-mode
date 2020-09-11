@@ -15,15 +15,15 @@
       
       
       <link rel="shortcut icon" href="examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
     
     
       
-        <title>LSP Mode - Language Server Protocol support for Emacs</title>
+        <title>LSP Mode - Language Server Protocol support for Emacs - LSP Mode - LSP support for Emacs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6e35a1a6.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.4dd2dd8d.min.css">
       
       
     
@@ -44,7 +44,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165661257-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165661257-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -54,6 +54,7 @@
   
     <body dir="ltr">
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -220,6 +221,38 @@
   
 
       
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="blog/2020/7.0-release/" class="md-tabs__link">
+          Blog
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://opencollective.com/emacs-lsp" class="md-tabs__link">
+          Support us
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -270,15 +303,11 @@
     
     <label class="md-nav__link" for="nav-1">
       Home
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Home" data-md-level="1">
       <label class="md-nav__title" for="nav-1">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Home
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -300,9 +329,7 @@
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Overview
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="." title="Overview" class="md-nav__link md-nav__link--active">
@@ -317,9 +344,7 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -357,7 +382,14 @@
     Contributions
   </a>
   
-    <nav class="md-nav" aria-label="Contributions">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-the-project" class="md-nav__link">
+    Support the project
+  </a>
+  
+    <nav class="md-nav" aria-label="Support the project">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -390,15 +422,11 @@
     
     <label class="md-nav__link" for="nav-1-2">
       Setup
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Setup" data-md-level="2">
       <label class="md-nav__title" for="nav-1-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Setup
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -422,9 +450,14 @@
 
 
   <li class="md-nav__item">
-    <a href="page/performance/" title="Perfomance" class="md-nav__link">
-      Perfomance
+    <a href="page/performance/" title="Performance" class="md-nav__link">
+      Performance
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -434,14 +467,9 @@
 
 
   <li class="md-nav__item">
-    <a href="page/additional-settings/" title="Additional settings" class="md-nav__link">
-      Additional settings
+    <a href="page/main-features/" title="Main features" class="md-nav__link">
+      Main features
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -476,19 +504,15 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-6" type="checkbox" id="nav-1-6">
     
-    <label class="md-nav__link" for="nav-1-5">
+    <label class="md-nav__link" for="nav-1-6">
       Extensions
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Extensions" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-1-6">
+        <span class="md-nav__icon md-icon"></span>
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -544,6 +568,18 @@
         
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="page/limitations/" title="Limitations" class="md-nav__link">
+      Limitations
+    </a>
   </li>
 
         
@@ -611,15 +647,11 @@
     
     <label class="md-nav__link" for="nav-2">
       Languages
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Languages" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Languages
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -895,7 +927,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-bingo/" title="Go (bingo)" class="md-nav__link">
+    <a href="page/lsp-bingo.md" title="Go (bingo)" class="md-nav__link">
       Go (bingo)
     </a>
   </li>
@@ -955,8 +987,32 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-emmy-lua/" title="Lua" class="md-nav__link">
-      Lua
+    <a href="page/lsp-emmy-lua/" title="Lua (EmmyLua)" class="md-nav__link">
+      Lua (EmmyLua)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="page/lsp-lua-language-server/" title="Lua (Lua Language Server)" class="md-nav__link">
+      Lua (Lua Language Server)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="page/lsp-lua-lsp/" title="Lua (Lua-Lsp)" class="md-nav__link">
+      Lua (Lua-Lsp)
     </a>
   </li>
 
@@ -1075,6 +1131,18 @@
 
 
   <li class="md-nav__item">
+    <a href="page/lsp-nix/" title="Nix" class="md-nav__link">
+      Nix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="page/lsp-ocaml/" title="OCaml (ocaml)" class="md-nav__link">
       OCaml (ocaml)
     </a>
@@ -1087,8 +1155,8 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-ocalm-lsp-server/" title="OCaml (icaml-lsp)" class="md-nav__link">
-      OCaml (icaml-lsp)
+    <a href="page/lsp-ocaml-lsp-server/" title="OCaml (ocaml-lsp)" class="md-nav__link">
+      OCaml (ocaml-lsp)
     </a>
   </li>
 
@@ -1171,6 +1239,18 @@
 
 
   <li class="md-nav__item">
+    <a href="page/lsp-prolog/" title="Prolog" class="md-nav__link">
+      Prolog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="page/lsp-purescript/" title="PureScript" class="md-nav__link">
       PureScript
     </a>
@@ -1183,8 +1263,32 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-pyls/" title="Python" class="md-nav__link">
-      Python
+    <a href="page/lsp-jedi/" title="Python (Jedi Language Server)" class="md-nav__link">
+      Python (Jedi Language Server)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="page/lsp-pyls/" title="Python (Palantir)" class="md-nav__link">
+      Python (Palantir)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://emacs-lsp.github.io/lsp-pyright" title="Python (Pyright)" class="md-nav__link">
+      Python (Pyright)
     </a>
   </li>
 
@@ -1209,6 +1313,30 @@
   <li class="md-nav__item">
     <a href="page/lsp-r/" title="R" class="md-nav__link">
       R
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="page/lsp-racket-langserver/" title="Racket (jeapostrophe)" class="md-nav__link">
+      Racket (jeapostrophe)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="page/lsp-racket-language-server/" title="Racket (Theia)" class="md-nav__link">
+      Racket (Theia)
     </a>
   </li>
 
@@ -1245,6 +1373,30 @@
   <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-metals" title="Scala" class="md-nav__link">
       Scala
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="page/lsp-sqls/" title="SQL (sqls)" class="md-nav__link">
+      SQL (sqls)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="page/lsp-svelte/" title="Svelte" class="md-nav__link">
+      Svelte
     </a>
   </li>
 
@@ -1303,8 +1455,8 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-latex/" title="TeX, LaTeX, etc (latex)" class="md-nav__link">
-      TeX, LaTeX, etc (latex)
+    <a href="page/lsp-latex/" title="TeX, LaTeX, etc (texlab, external)" class="md-nav__link">
+      TeX, LaTeX, etc (texlab, external)
     </a>
   </li>
 
@@ -1397,15 +1549,11 @@
     
     <label class="md-nav__link" for="nav-3">
       Debugging
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Debugging" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Debugging
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1439,15 +1587,11 @@
     
     <label class="md-nav__link" for="nav-4">
       Gallery
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Gallery" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Gallery
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1481,15 +1625,11 @@
     
     <label class="md-nav__link" for="nav-5">
       Changelog
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Changelog" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Changelog
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1503,6 +1643,108 @@
   <li class="md-nav__item">
     <a href="page/CHANGELOG/" title="Changelog" class="md-nav__link">
       Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Blog
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Blog" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Blog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+    
+    <label class="md-nav__link" for="nav-6-1">
+      2020
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="2020" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-1">
+        <span class="md-nav__icon md-icon"></span>
+        2020
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="blog/2020/7.0-release/" title="7.0 Release" class="md-nav__link">
+      7.0 Release
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Support us
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Support us" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Support us
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://opencollective.com/emacs-lsp" title="None" class="md-nav__link">
+      None
     </a>
   </li>
 
@@ -1530,9 +1772,7 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -1570,7 +1810,14 @@
     Contributions
   </a>
   
-    <nav class="md-nav" aria-label="Contributions">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-the-project" class="md-nav__link">
+    Support the project
+  </a>
+  
+    <nav class="md-nav" aria-label="Support the project">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1614,13 +1861,13 @@
 <p><img alt="LSP mode" src="examples/head.png" /></p>
 <p><hr>
 <p align="center">
-  <a href="https://emacs-lsp.github.io/lsp-mode"><strong>homepage</strong></a> • 
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/installation"><strong>installation</strong></a> • 
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/languages"><strong>languages</strong></a> • 
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/settings"><strong>settings</strong></a> • 
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/extensions"><strong>extensions</strong></a> • 
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/troubleshooting"><strong>troubleshooting</strong></a> • 
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/gallery"><strong>screenshots</strong></a> • 
+  <a href="https://emacs-lsp.github.io/lsp-mode"><strong>homepage</strong></a> •
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/installation"><strong>installation</strong></a> •
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/languages"><strong>languages</strong></a> •
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/settings"><strong>settings</strong></a> •
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/extensions"><strong>extensions</strong></a> •
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/troubleshooting"><strong>troubleshooting</strong></a> •
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/gallery"><strong>screenshots</strong></a> •
   <a href="https://emacs-lsp.github.io/lsp-mode/page/faq"><strong>FAQ</strong></a>
 </p>
 <hr></p>
@@ -1647,8 +1894,7 @@ most popular Emacs packages like <code>company</code>, <code>flycheck</code> and
     <a href="https://github.com/tigersoldier/company-lsp">company-lsp</a> is no
     longer supported).</li>
 <li>Hovers - using <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a></li>
-<li>Code actions - using <code>lsp-execute-code-action</code> or
-    <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a> sideline.</li>
+<li>Code actions - via <code>lsp-execute-code-action</code>, <a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#code-actions-on-modeline">modeline</a> (recommended) or <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a> sideline.</li>
 <li>Code outline - using builtin
     <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Imenu.html">imenu</a>
     or <code>helm-imenu</code></li>
@@ -1659,7 +1905,9 @@ most popular Emacs packages like <code>company</code>, <code>flycheck</code> and
 <li>Code lens</li>
 <li>Symbol highlights</li>
 <li>Formatting</li>
+<li><a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#project-errors-on-modeline">Project errors</a> on modeline</li>
 <li>Debugger - <a href="https://emacs-lsp.github.io/dap-mode/">dap-mode</a></li>
+<li><a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#breadcrumb-on-headerline">Breadcrumb on headerline</a></li>
 <li>Helm integration -
     <a href="https://github.com/emacs-lsp/helm-lsp/">helm-lsp</a></li>
 <li>Ivy integration - <a href="https://github.com/emacs-lsp/lsp-ivy/">lsp-ivy</a></li>
@@ -1692,9 +1940,15 @@ most popular Emacs packages like <code>company</code>, <code>flycheck</code> and
     package that displays available keybindings in popup</li>
 <li><a href="https://github.com/bbatsov/projectile/">projectile</a> - Project
     Interaction Library for Emacs</li>
+<li><a href="https://github.com/ubolonton/emacs-tree-sitter">emacs-tree-sitter</a> - Faster, fine-grained code highlighting via <a href="https://github.com/tree-sitter/tree-sitter">tree-sitter</a>.</li>
+<li><a href="https://akrl.sdf.org/gccemacs.html">gccemacs</a> - modified Emacs capable of compiling and running Emacs Lisp as native code.</li>
 </ul>
 <h2 id="contributions">Contributions<a class="headerlink" href="#contributions" title="Permanent link">#</a></h2>
 <p>Contributions are very much welcome.</p>
+<h2 id="support-the-project">Support the project<a class="headerlink" href="#support-the-project" title="Permanent link">#</a></h2>
+<p>The <code>emacs-lsp</code> organization has more than <strong>20.000 lines of code</strong>, to keep all of this working,
+we need to implement new features and help the community on a lot of issues.</p>
+<p>You can help us keep going and improving it by <strong><a href="https://opencollective.com/emacs-lsp">supporting the project</a></strong></p>
 <h3 id="members">Members<a class="headerlink" href="#members" title="Permanent link">#</a></h3>
 <p>Here it is a list of the current <code>lsp-mode</code> members and what they are
 primary working on/responsible for.</p>
@@ -1813,6 +2067,19 @@ primary working on/responsible for.</p>
       </div>
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <div>
+        <a href="https://github.com/kiennq">
+          <img src="https://github.com/kiennq.png" width="100px;" style="border-radius: 50%;" alt="kiennq"/>
+          <br/>
+          <sub><b>kiennq</b></sub>
+        </a>
+        <br/>
+        completions | pwsh
+      </div>
+    </td>
+  </tr>
 </table>
                 
                   
@@ -1822,7 +2089,7 @@ primary working on/responsible for.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: June 13, 2020
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2020</span>
     
   </small>
 </div>
@@ -1910,15 +2177,15 @@ primary working on/responsible for.</p>
       
     </div>
     
-      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: ".",
           features: ["tabs"],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.c03f0417.min.js"
+            worker: "assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

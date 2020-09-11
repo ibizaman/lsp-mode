@@ -13,15 +13,15 @@
       
       
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
     
     
       
-        <title>TeX, LaTeX, etc (latex) - LSP Mode - LSP support for Emacs</title>
+        <title>TeX, LaTeX, etc (texlab, external) - LSP Mode - LSP support for Emacs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6e35a1a6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
       
       
     
@@ -42,7 +42,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165661257-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165661257-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -52,13 +52,14 @@
   
     <body dir="ltr">
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#tex-latex-etc" class="md-skip">
+        <a href="#lsp-latex-for-tex-latex-etc" class="md-skip">
           Skip to content
         </a>
       
@@ -85,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              TeX, LaTeX, etc (latex)
+              TeX, LaTeX, etc (texlab, external)
             
           </span>
         </div>
@@ -218,6 +219,38 @@
   
 
       
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../blog/2020/7.0-release/" class="md-tabs__link">
+          Blog
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://opencollective.com/emacs-lsp" class="md-tabs__link">
+          Support us
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -266,15 +299,11 @@
     
     <label class="md-nav__link" for="nav-1">
       Home
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Home" data-md-level="1">
       <label class="md-nav__title" for="nav-1">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Home
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -303,15 +332,11 @@
     
     <label class="md-nav__link" for="nav-1-2">
       Setup
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Setup" data-md-level="2">
       <label class="md-nav__title" for="nav-1-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Setup
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -335,9 +360,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../performance/" title="Perfomance" class="md-nav__link">
-      Perfomance
+    <a href="../performance/" title="Performance" class="md-nav__link">
+      Performance
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -347,14 +377,9 @@
 
 
   <li class="md-nav__item">
-    <a href="../additional-settings/" title="Additional settings" class="md-nav__link">
-      Additional settings
+    <a href="../main-features/" title="Main features" class="md-nav__link">
+      Main features
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -389,19 +414,15 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-6" type="checkbox" id="nav-1-6">
     
-    <label class="md-nav__link" for="nav-1-5">
+    <label class="md-nav__link" for="nav-1-6">
       Extensions
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Extensions" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-1-6">
+        <span class="md-nav__icon md-icon"></span>
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -457,6 +478,18 @@
         
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../limitations/" title="Limitations" class="md-nav__link">
+      Limitations
+    </a>
   </li>
 
         
@@ -526,15 +559,11 @@
     
     <label class="md-nav__link" for="nav-2">
       Languages
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Languages" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Languages
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -810,7 +839,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-bingo/" title="Go (bingo)" class="md-nav__link">
+    <a href="../lsp-bingo.md" title="Go (bingo)" class="md-nav__link">
       Go (bingo)
     </a>
   </li>
@@ -870,8 +899,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-emmy-lua/" title="Lua" class="md-nav__link">
-      Lua
+    <a href="../lsp-emmy-lua/" title="Lua (EmmyLua)" class="md-nav__link">
+      Lua (EmmyLua)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-lua-language-server/" title="Lua (Lua Language Server)" class="md-nav__link">
+      Lua (Lua Language Server)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-lua-lsp/" title="Lua (Lua-Lsp)" class="md-nav__link">
+      Lua (Lua-Lsp)
     </a>
   </li>
 
@@ -990,6 +1043,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-nix/" title="Nix" class="md-nav__link">
+      Nix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../lsp-ocaml/" title="OCaml (ocaml)" class="md-nav__link">
       OCaml (ocaml)
     </a>
@@ -1002,8 +1067,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-ocalm-lsp-server/" title="OCaml (icaml-lsp)" class="md-nav__link">
-      OCaml (icaml-lsp)
+    <a href="../lsp-ocaml-lsp-server/" title="OCaml (ocaml-lsp)" class="md-nav__link">
+      OCaml (ocaml-lsp)
     </a>
   </li>
 
@@ -1086,6 +1151,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-prolog/" title="Prolog" class="md-nav__link">
+      Prolog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../lsp-purescript/" title="PureScript" class="md-nav__link">
       PureScript
     </a>
@@ -1098,8 +1175,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-pyls/" title="Python" class="md-nav__link">
-      Python
+    <a href="../lsp-jedi/" title="Python (Jedi Language Server)" class="md-nav__link">
+      Python (Jedi Language Server)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-pyls/" title="Python (Palantir)" class="md-nav__link">
+      Python (Palantir)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://emacs-lsp.github.io/lsp-pyright" title="Python (Pyright)" class="md-nav__link">
+      Python (Pyright)
     </a>
   </li>
 
@@ -1124,6 +1225,30 @@
   <li class="md-nav__item">
     <a href="../lsp-r/" title="R" class="md-nav__link">
       R
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-racket-langserver/" title="Racket (jeapostrophe)" class="md-nav__link">
+      Racket (jeapostrophe)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-racket-language-server/" title="Racket (Theia)" class="md-nav__link">
+      Racket (Theia)
     </a>
   </li>
 
@@ -1160,6 +1285,30 @@
   <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-metals" title="Scala" class="md-nav__link">
       Scala
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-sqls/" title="SQL (sqls)" class="md-nav__link">
+      SQL (sqls)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-svelte/" title="Svelte" class="md-nav__link">
+      Svelte
     </a>
   </li>
 
@@ -1227,14 +1376,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        TeX, LaTeX, etc (latex)
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
+        TeX, LaTeX, etc (texlab, external)
+        <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="TeX, LaTeX, etc (latex)" class="md-nav__link md-nav__link--active">
-      TeX, LaTeX, etc (latex)
+    <a href="./" title="TeX, LaTeX, etc (texlab, external)" class="md-nav__link md-nav__link--active">
+      TeX, LaTeX, etc (texlab, external)
     </a>
     
       
@@ -1245,9 +1392,7 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -1260,11 +1405,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#installationserver" class="md-nav__link">
+    Installation(server)
   </a>
   
-    <nav class="md-nav" aria-label="Installation">
+    <nav class="md-nav" aria-label="Installation(server)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1280,8 +1425,76 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installationclient" class="md-nav__link">
+    Installation(client)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#available-configurations" class="md-nav__link">
     Available configurations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-variables" class="md-nav__link">
+    Other variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Other variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-latex-texlab-executable" class="md-nav__link">
+    lsp-latex-texlab-executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-latex-texlab-executable-argument-list" class="md-nav__link">
+    lsp-latex-texlab-executable-argument-list
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-functions" class="md-nav__link">
+    Available functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Available functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-latex-build" class="md-nav__link">
+    lsp-latex-build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-latex-forward-search" class="md-nav__link">
+    lsp-latex-forward-search
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note
   </a>
   
 </li>
@@ -1381,15 +1594,11 @@
     
     <label class="md-nav__link" for="nav-3">
       Debugging
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Debugging" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Debugging
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1423,15 +1632,11 @@
     
     <label class="md-nav__link" for="nav-4">
       Gallery
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Gallery" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Gallery
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1465,15 +1670,11 @@
     
     <label class="md-nav__link" for="nav-5">
       Changelog
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Changelog" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Changelog
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1487,6 +1688,108 @@
   <li class="md-nav__item">
     <a href="../CHANGELOG/" title="Changelog" class="md-nav__link">
       Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Blog
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Blog" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Blog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+    
+    <label class="md-nav__link" for="nav-6-1">
+      2020
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="2020" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-1">
+        <span class="md-nav__icon md-icon"></span>
+        2020
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blog/2020/7.0-release/" title="7.0 Release" class="md-nav__link">
+      7.0 Release
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Support us
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Support us" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Support us
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://opencollective.com/emacs-lsp" title="None" class="md-nav__link">
+      None
     </a>
   </li>
 
@@ -1514,9 +1817,7 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -1529,11 +1830,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#installationserver" class="md-nav__link">
+    Installation(server)
   </a>
   
-    <nav class="md-nav" aria-label="Installation">
+    <nav class="md-nav" aria-label="Installation(server)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1549,8 +1850,76 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installationclient" class="md-nav__link">
+    Installation(client)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#available-configurations" class="md-nav__link">
     Available configurations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-variables" class="md-nav__link">
+    Other variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Other variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-latex-texlab-executable" class="md-nav__link">
+    lsp-latex-texlab-executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-latex-texlab-executable-argument-list" class="md-nav__link">
+    lsp-latex-texlab-executable-argument-list
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-functions" class="md-nav__link">
+    Available functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Available functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-latex-build" class="md-nav__link">
+    lsp-latex-build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-latex-forward-search" class="md-nav__link">
+    lsp-latex-forward-search
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note
   </a>
   
 </li>
@@ -1575,13 +1944,125 @@
                   
                 
                 
-                <h1 id="tex-latex-etc">TeX, LaTeX, etc.<a class="headerlink" href="#tex-latex-etc" title="Permanent link">#</a></h1>
+                <h1 id="lsp-latex-for-tex-latex-etc">lsp-latex for TeX, LaTeX, etc.<a class="headerlink" href="#lsp-latex-for-tex-latex-etc" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For information about the LSP server, check the <a href="https://github.com/latex-lsp/texlab">texlab</a>.</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p><code>cargo install --git https://github.com/latex-lsp/texlab.git</code></p>
+<p>For information about the LSP server, check the <a href="https://texlab.netlify.app/">texlab</a>.</p>
+<h2 id="installationserver">Installation(server)<a class="headerlink" href="#installationserver" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code>cargo install --git https://github.com/latex-lsp/texlab.git
+</code></pre></div>
+
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
+<h2 id="installationclient">Installation(client)<a class="headerlink" href="#installationclient" title="Permanent link">#</a></h2>
+<p>You can get <code>lsp-latex</code> from melpa. Add melpa to the list <code>package-archives</code>,
+and run:
+<kbd>M-x</kbd> <code>package-initialize</code> <kbd>M-x</kbd> <code>package-install</code> <kbd>RET</kbd> <code>lsp-latex</code></p>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<p>These are the available configurations. All configurations <code>texlab</code> provides are available.
+See also <a href="https://texlab.netlify.app/docs/reference/configuration">document of texlab</a>.</p>
+<table>
+<thead>
+<tr>
+<th>texlab configuration</th>
+<th>custom variable</th>
+<th>summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>latex.rootDirectory</td>
+<td>lsp-latex-root-directory</td>
+<td>Directory from which file get compiled</td>
+</tr>
+<tr>
+<td>latex.build.executable</td>
+<td>lsp-latex-build-executable</td>
+<td>Executable used on <code>lsp-latex-build</code></td>
+</tr>
+<tr>
+<td>latex.build.args</td>
+<td>lsp-latex--build-args</td>
+<td>Args passed to <code>lsp-latex-texlab-executable</code></td>
+</tr>
+<tr>
+<td>latex.build.onSave</td>
+<td>lsp-latex-build-on-save</td>
+<td>Build after saving file or not</td>
+</tr>
+<tr>
+<td>latex.build.outputDirectory</td>
+<td>lsp-latex-build-output-directory</td>
+<td>Directory which will contain outputs</td>
+</tr>
+<tr>
+<td>latex.build.forwardSearchAfter</td>
+<td>lsp-latex-forward-search-after</td>
+<td>Execute forward search after building or not</td>
+</tr>
+<tr>
+<td>latex.forwardSearch.executable</td>
+<td>lsp-latex-forward-search-executable</td>
+<td>PDF viewer which will receive forward search signal</td>
+</tr>
+<tr>
+<td>latex.forwardSearch.args</td>
+<td>lsp-latex--forward-search-args</td>
+<td>Args passed to <code>lsp-latex-forward-search-executable</code></td>
+</tr>
+<tr>
+<td>latex.lint.onChange</td>
+<td>lsp-latex-lint-on-change</td>
+<td>Lint with chktex after changing a file or not</td>
+</tr>
+<tr>
+<td>latex.lint.onSave</td>
+<td>lsp-latex-lint-on-save</td>
+<td>Lint with chktex after saving a file</td>
+</tr>
+<tr>
+<td>bibtex.formatting.lineLength</td>
+<td>lsp-latex-bibtex-formatting-line-length</td>
+<td>Max length of characters per line on formatting BibTeX files</td>
+</tr>
+<tr>
+<td>bibtex.formatting.formatter</td>
+<td>lsp-latex-bibtex-formatting-formatter</td>
+<td>Formatter of BibTeX (texlab or latexindent)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-variables">Other variables<a class="headerlink" href="#other-variables" title="Permanent link">#</a></h2>
+<h3 id="lsp-latex-texlab-executable"><code>lsp-latex-texlab-executable</code><a class="headerlink" href="#lsp-latex-texlab-executable" title="Permanent link">#</a></h3>
+<p>Where texlab server located.</p>
+<h3 id="lsp-latex-texlab-executable-argument-list"><code>lsp-latex-texlab-executable-argument-list</code><a class="headerlink" href="#lsp-latex-texlab-executable-argument-list" title="Permanent link">#</a></h3>
+<p>Argument list passed to texlab server.</p>
+<h2 id="available-functions">Available functions<a class="headerlink" href="#available-functions" title="Permanent link">#</a></h2>
+<h3 id="lsp-latex-build"><code>lsp-latex-build</code><a class="headerlink" href="#lsp-latex-build" title="Permanent link">#</a></h3>
+<p>Build .tex files with texlab.
+It use latexmk by default, so add .latexmkrc if you want to customize
+latex commands or options. You can change build command and option to other
+such as <code>make</code>, by changing <code>lsp-latex-build-executable</code> and
+<code>lsp-latex-build-args</code>.</p>
+<p>This command builds asynchronously by default, while it build synchronously
+with prefix argument(C-u).</p>
+<h3 id="lsp-latex-forward-search"><code>lsp-latex-forward-search</code><a class="headerlink" href="#lsp-latex-forward-search" title="Permanent link">#</a></h3>
+<p>Move to current position on pdf viewer.
+To use, you should set <code>lsp-latex-forward-search-executable</code> and
+<code>lsp-latex-forward-search-args</code> according to your pdf viewer.
+See also <a href="https://texlab.netlify.app/docs/installation/previewing">document of texlab</a>.</p>
+<h2 id="note">Note<a class="headerlink" href="#note" title="Permanent link">#</a></h2>
+<p>In this package, you can use even texlab v0.4.2 or older, written with Java,
+though it is not recommended. If you want to use them, you can write like:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">;; Path to Java executable. If it is added to environmental PATH,</span>
+<span class="c1">;; you don&#39;t have to write this.</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-latex-java-executable</span> <span class="s">&quot;/path/to/java&quot;</span><span class="p">)</span>
+
+<span class="c1">;; &quot;texlab.jar&quot; must be located at a directory contained in `exec-path&#39;</span>
+<span class="c1">;; &quot;texlab&quot; must be located at a directory contained in `exec-path&#39;.</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-latex-texlab-jar-file</span> <span class="ss">&#39;search-from-exec-path</span><span class="p">)</span>
+<span class="c1">;; If you want to put &quot;texlab.jar&quot; somewhere else,</span>
+<span class="c1">;; you can specify the path to &quot;texlab.jar&quot; as follows:</span>
+<span class="c1">;; (setq lsp-latex-texlab-jar-file &quot;/path/to/texlab.jar&quot;)</span>
+</code></pre></div>
                 
                   
                     
@@ -1590,7 +2071,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: June 13, 2020
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2020</span>
     
   </small>
 </div>
@@ -1692,15 +2173,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.c03f0417.min.js"
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

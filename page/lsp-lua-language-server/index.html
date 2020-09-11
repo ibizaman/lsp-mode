@@ -9,19 +9,19 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/additional-settings/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-lua-language-server/">
       
       
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
     
     
       
-        <title>Additional settings - LSP Mode - LSP support for Emacs</title>
+        <title>Lua (Lua Language Server) - LSP Mode - LSP support for Emacs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6e35a1a6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
       
       
     
@@ -42,7 +42,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165661257-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165661257-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -52,13 +52,14 @@
   
     <body dir="ltr">
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#additional-settings" class="md-skip">
+        <a href="#lua" class="md-skip">
           Skip to content
         </a>
       
@@ -85,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Additional settings
+              Lua (Lua Language Server)
             
           </span>
         </div>
@@ -158,7 +159,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../.." class="md-tabs__link md-tabs__link--active">
+        <a href="../.." class="md-tabs__link">
           Home
         </a>
       
@@ -171,7 +172,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../languages/" class="md-tabs__link">
+        <a href="../languages/" class="md-tabs__link md-tabs__link--active">
           Languages
         </a>
       
@@ -212,6 +213,38 @@
       
         <a href="../CHANGELOG/" class="md-tabs__link">
           Changelog
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../blog/2020/7.0-release/" class="md-tabs__link">
+          Blog
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://opencollective.com/emacs-lsp" class="md-tabs__link">
+          Support us
         </a>
       
     </li>
@@ -259,24 +292,18 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
     
     <label class="md-nav__link" for="nav-1">
       Home
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Home" data-md-level="1">
       <label class="md-nav__title" for="nav-1">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Home
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -298,24 +325,18 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
     
     <label class="md-nav__link" for="nav-1-2">
       Setup
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Setup" data-md-level="2">
       <label class="md-nav__title" for="nav-1-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Setup
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -339,9 +360,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../performance/" title="Perfomance" class="md-nav__link">
-      Perfomance
+    <a href="../performance/" title="Performance" class="md-nav__link">
+      Performance
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -349,78 +375,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Additional settings
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Additional settings" class="md-nav__link md-nav__link--active">
-      Additional settings
+  <li class="md-nav__item">
+    <a href="../main-features/" title="Main features" class="md-nav__link">
+      Main features
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recommended-settings-for-related-packages" class="md-nav__link">
-    Recommended settings for related packages
-  </a>
-  
-    <nav class="md-nav" aria-label="Recommended settings for related packages">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#company-autocomplete" class="md-nav__link">
-    Company (autocomplete)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formatting" class="md-nav__link">
-    Formatting
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -455,19 +414,15 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-6" type="checkbox" id="nav-1-6">
     
-    <label class="md-nav__link" for="nav-1-5">
+    <label class="md-nav__link" for="nav-1-6">
       Extensions
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Extensions" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-1-6">
+        <span class="md-nav__icon md-icon"></span>
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -532,6 +487,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../limitations/" title="Limitations" class="md-nav__link">
+      Limitations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../remote/" title="Remote" class="md-nav__link">
       Remote
     </a>
@@ -583,22 +550,20 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Languages
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Languages" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Languages
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -874,7 +839,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-bingo/" title="Go (bingo)" class="md-nav__link">
+    <a href="../lsp-bingo.md" title="Go (bingo)" class="md-nav__link">
       Go (bingo)
     </a>
   </li>
@@ -934,8 +899,138 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-emmy-lua/" title="Lua" class="md-nav__link">
-      Lua
+    <a href="../lsp-emmy-lua/" title="Lua (EmmyLua)" class="md-nav__link">
+      Lua (EmmyLua)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Lua (Lua Language Server)
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Lua (Lua Language Server)" class="md-nav__link md-nav__link--active">
+      Lua (Lua Language Server)
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-not-available" class="md-nav__link">
+    Debugger: Not available
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-install-dir" class="md-nav__link">
+    lsp-clients-lua-language-server-install-dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-bin" class="md-nav__link">
+    lsp-clients-lua-language-server-bin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-main-location" class="md-nav__link">
+    lsp-clients-lua-language-server-main-location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-args" class="md-nav__link">
+    lsp-clients-lua-language-server-args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-command" class="md-nav__link">
+    lsp-clients-lua-language-server-command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-lua-lsp/" title="Lua (Lua-Lsp)" class="md-nav__link">
+      Lua (Lua-Lsp)
     </a>
   </li>
 
@@ -1054,6 +1149,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-nix/" title="Nix" class="md-nav__link">
+      Nix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../lsp-ocaml/" title="OCaml (ocaml)" class="md-nav__link">
       OCaml (ocaml)
     </a>
@@ -1066,8 +1173,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-ocalm-lsp-server/" title="OCaml (icaml-lsp)" class="md-nav__link">
-      OCaml (icaml-lsp)
+    <a href="../lsp-ocaml-lsp-server/" title="OCaml (ocaml-lsp)" class="md-nav__link">
+      OCaml (ocaml-lsp)
     </a>
   </li>
 
@@ -1150,6 +1257,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-prolog/" title="Prolog" class="md-nav__link">
+      Prolog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../lsp-purescript/" title="PureScript" class="md-nav__link">
       PureScript
     </a>
@@ -1162,8 +1281,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-pyls/" title="Python" class="md-nav__link">
-      Python
+    <a href="../lsp-jedi/" title="Python (Jedi Language Server)" class="md-nav__link">
+      Python (Jedi Language Server)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-pyls/" title="Python (Palantir)" class="md-nav__link">
+      Python (Palantir)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://emacs-lsp.github.io/lsp-pyright" title="Python (Pyright)" class="md-nav__link">
+      Python (Pyright)
     </a>
   </li>
 
@@ -1188,6 +1331,30 @@
   <li class="md-nav__item">
     <a href="../lsp-r/" title="R" class="md-nav__link">
       R
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-racket-langserver/" title="Racket (jeapostrophe)" class="md-nav__link">
+      Racket (jeapostrophe)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-racket-language-server/" title="Racket (Theia)" class="md-nav__link">
+      Racket (Theia)
     </a>
   </li>
 
@@ -1224,6 +1391,30 @@
   <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-metals" title="Scala" class="md-nav__link">
       Scala
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-sqls/" title="SQL (sqls)" class="md-nav__link">
+      SQL (sqls)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-svelte/" title="Svelte" class="md-nav__link">
+      Svelte
     </a>
   </li>
 
@@ -1282,8 +1473,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-latex/" title="TeX, LaTeX, etc (latex)" class="md-nav__link">
-      TeX, LaTeX, etc (latex)
+    <a href="../lsp-latex/" title="TeX, LaTeX, etc (texlab, external)" class="md-nav__link">
+      TeX, LaTeX, etc (texlab, external)
     </a>
   </li>
 
@@ -1376,15 +1567,11 @@
     
     <label class="md-nav__link" for="nav-3">
       Debugging
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Debugging" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Debugging
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1418,15 +1605,11 @@
     
     <label class="md-nav__link" for="nav-4">
       Gallery
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Gallery" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Gallery
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1460,15 +1643,11 @@
     
     <label class="md-nav__link" for="nav-5">
       Changelog
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Changelog" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
         Changelog
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1482,6 +1661,108 @@
   <li class="md-nav__item">
     <a href="../CHANGELOG/" title="Changelog" class="md-nav__link">
       Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Blog
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Blog" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Blog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+    
+    <label class="md-nav__link" for="nav-6-1">
+      2020
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="2020" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-1">
+        <span class="md-nav__icon md-icon"></span>
+        2020
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blog/2020/7.0-release/" title="7.0 Release" class="md-nav__link">
+      7.0 Release
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Support us
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Support us" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Support us
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://opencollective.com/emacs-lsp" title="None" class="md-nav__link">
+      None
     </a>
   </li>
 
@@ -1509,24 +1790,29 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#recommended-settings-for-related-packages" class="md-nav__link">
-    Recommended settings for related packages
+  <a href="#server" class="md-nav__link">
+    Server
   </a>
   
-    <nav class="md-nav" aria-label="Recommended settings for related packages">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#company-autocomplete" class="md-nav__link">
-    Company (autocomplete)
+  <a href="#debugger-not-available" class="md-nav__link">
+    Debugger: Not available
   </a>
   
 </li>
@@ -1537,9 +1823,50 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#formatting" class="md-nav__link">
-    Formatting
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
   </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-install-dir" class="md-nav__link">
+    lsp-clients-lua-language-server-install-dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-bin" class="md-nav__link">
+    lsp-clients-lua-language-server-bin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-main-location" class="md-nav__link">
+    lsp-clients-lua-language-server-main-location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-args" class="md-nav__link">
+    lsp-clients-lua-language-server-args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-lua-language-server-command" class="md-nav__link">
+    lsp-clients-lua-language-server-command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1555,7 +1882,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/additional-settings.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/lsp-lua-language-server.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1563,20 +1890,33 @@
                   
                 
                 
-                <h1 id="additional-settings">Additional settings<a class="headerlink" href="#additional-settings" title="Permanent link">#</a></h1>
-<h2 id="recommended-settings-for-related-packages">Recommended settings for related packages<a class="headerlink" href="#recommended-settings-for-related-packages" title="Permanent link">#</a></h2>
-<h3 id="company-autocomplete">Company (autocomplete)<a class="headerlink" href="#company-autocomplete" title="Permanent link">#</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">company-minimum-prefix-length</span> <span class="mi">1</span>
-      <span class="nv">company-idle-delay</span> <span class="mf">0.0</span><span class="p">)</span> <span class="c1">;; default is 0.2</span>
-</code></pre></div>
-
-<h2 id="formatting">Formatting<a class="headerlink" href="#formatting" title="Permanent link">#</a></h2>
-<p>In general the formatter settings are language server specific(e. g. <code>JDT LS</code> uses eclipse formatter file and <code>lsp-java-format-settings-url</code> to configure it while clangd uses <code>clangd-format</code>). The only settings that are controlled on <code>lsp-mode</code> level are indent size and whether the server should use tabs or spaces.</p>
-<ul>
-<li>Use <code>c-basic-offset</code> for <code>cc-mode</code> derived moves(e. g. java, C++) to control the tab size.</li>
-<li>Use <code>tab-width</code> for any other mode to do the same.</li>
-<li>Use <code>indent-tabs-mode</code> for selecting tab/spaces.</li>
-</ul>
+                <h1 id="lua">Lua<a class="headerlink" href="#lua" title="Permanent link">#</a></h1>
+<h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
+<p>For information about the LSP server, check the <a href="https://github.com/sumneko/lua-language-server">lua-language-server</a>.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
+<p>For more instructions on how to install, check <a href="https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)">here</a>.</p>
+<h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
+<h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-clients-lua-language-server-install-dir"><code>lsp-clients-lua-language-server-install-dir</code><a class="headerlink" href="#lsp-clients-lua-language-server-install-dir" title="Permanent link">#</a></h3>
+<p><em>Default: <code>~/.emacs.d/.cache/lsp/lua-language-server/</code></em></p>
+<p>Installation directory for Lua Language Server.</p>
+<hr />
+<h3 id="lsp-clients-lua-language-server-bin"><code>lsp-clients-lua-language-server-bin</code><a class="headerlink" href="#lsp-clients-lua-language-server-bin" title="Permanent link">#</a></h3>
+<p><em>Default: <code>~/.emacs.d/.cache/lsp/lua-language-server/bin/Linux/lua-language-server</code></em></p>
+<p>Location of Lua Language Server.</p>
+<hr />
+<h3 id="lsp-clients-lua-language-server-main-location"><code>lsp-clients-lua-language-server-main-location</code><a class="headerlink" href="#lsp-clients-lua-language-server-main-location" title="Permanent link">#</a></h3>
+<p><em>Default: <code>~/.emacs.d/.cache/lsp/lua-language-server/main.lua</code></em></p>
+<p>Location of Lua Language Server main.lua.</p>
+<hr />
+<h3 id="lsp-clients-lua-language-server-args"><code>lsp-clients-lua-language-server-args</code><a class="headerlink" href="#lsp-clients-lua-language-server-args" title="Permanent link">#</a></h3>
+<p><em>Default: <code>(-E)</code></em></p>
+<p>Arguments to run the Lua Language server.</p>
+<hr />
+<h3 id="lsp-clients-lua-language-server-command"><code>lsp-clients-lua-language-server-command</code><a class="headerlink" href="#lsp-clients-lua-language-server-command" title="Permanent link">#</a></h3>
+<p><em>Default: <code>(/home/runner/.emacs.d/.cache/lsp/lua-language-server/bin/Linux/lua-language-server -E /home/runner/.emacs.d/.cache/lsp/lua-language-server/main.lua)</code></em></p>
+<p>Command to start Lua Language server.</p>
+<hr />
                 
                   
                     
@@ -1585,7 +1925,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: June 13, 2020
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2020</span>
     
   </small>
 </div>
@@ -1608,7 +1948,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../performance/" title="Perfomance" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lsp-emmy-lua/" title="Lua (EmmyLua)" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1617,19 +1957,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Perfomance
+                Lua (EmmyLua)
               </div>
             </div>
           </a>
         
         
-          <a href="../settings/" title="Settings" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../lsp-lua-lsp/" title="Lua (Lua-Lsp)" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Settings
+                Lua (Lua-Lsp)
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1687,15 +2027,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.c03f0417.min.js"
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
